@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SRC/Styles/styles.css">
+    <title>MR_Technical</title>
+</head>
+<body>
+    <header >
+        <!--here is where our cart will be-->
+        <div class="Dropdown">
+            <button type="button" id="CartButton" >My Cart(<span id="InCartNumber">0</span>)</button>
+            <div class="Dropdown-Content">
+                <ul id="cartItems"></ul>
+            </div>
+        </div>
+        
+
+        </div>
+    </header>
+    <div class="Product-container">
+        <div class="ProductImageSection">
+            <!--here will be product image-->
+            <div id="ProImage">
+
+            </div>
+            
+        </div>
+        <div class="ProductSideSection">
+            <!--here will be where all our options will be-->
+            <div id="ProName">
+    
+            </div>
+            <div id="ProPrice">
+    
+            </div>
+            <div id="proDiscripsion">
+    
+            </div>
+            <div id="ProSize">
+                <div id="SizeLabel">SIZE<span id="sizeStar">*</span><span id="currentSize"></span></div>
+            </div>
+            <div class="ProAddToCartButton">
+                <button type="button" id="addToCartBtn">Add To Cart</button>
+                <div id="debugMessage" style="display: none;">Please select a size</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/SRC/JS/CartDropBox.js"></script>
+    <script src="/SRC/JS/GetImage.js"></script>
+    <script src="/SRC/JS/ShowProductInfo.js"></script>
+</body>
+</html>
